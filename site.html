@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<head>
+    <title> SITE PESSOAL </title>
+    <style> 
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: #0a3a66;
+  }
+  
+  header {
+    width: 100%;
+    background-color: #0a3a66;
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+  
+  h1{
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .iot {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #0a3a66;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+   }
+   
+   .iot:disabled {
+    pointer-events: none;
+   }
+
+   .iot:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+
+   .paginapessoal {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #0a3a66;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+   }
+   
+   .paginapessoal:disabled {
+    pointer-events: none;
+   }
+
+   .paginapessoal:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+
+   .container {
+    max-width: 800px;
+    margin: 200px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .foto {
+    width: 500px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+  
+  .foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .texto {
+    width: 60%;
+  }
+  
+  .texto h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .texto p {
+    font-size: 18px;
+    color: #666;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: #0a3a66;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #0a3a66;
+  }
+
+.linkedIn {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(0, 119, 181);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgb(0, 119, 181);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+}
+
+.linkedIn span {
+  margin: 10px;
+}
+
+.linkedIn::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.linkedIn:hover {
+  color: #fff;
+  border: 1px solid rgb(0, 119, 181);
+}
+
+.linkedIn:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(0, 119, 181);
+}
+
+.github {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(36, 41, 46);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgb(36, 41, 46);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+}
+
+.github span {
+  margin: 10px;
+}
+
+.github::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.github:hover {
+  color: #fff;
+  border: 1px solid rgb(36, 41, 46);
+}
+
+.github:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(36, 41, 46);
+}
+
+button {
+  float: left;
+  margin-right: 10px;
+}
+
+* {
+  margin: 10;
+  padding: 10;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+}
+
+footer {
+  background-color: #0a3a66;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+    </style>
+</head>
+    <header>
+      <div class="dropdown">
+        <button class="dropbtn"> <strong> ÁREAS DO CONHECIMENTO </strong> </button>
+        <div class="dropdown-content">
+          <a href= "matemática.html"> MATEMÁTICA </a>
+          <a href= "ch.html"> CIÊNCIAS HUMANAS</a>
+          <a href= "cn.html"> CIÊNCIAS NATURAIS </a>
+          <a href= "lgg.html"> LINGUAGENS </a>
+        </div>
+      </div>
+      <button class="iot" onclick="window.location.href='iot.html'"> IOT </button>
+      <button class="paginapessoal" onclick="window.location.href='paginainicial.html'"> PÁGINA PESSOAL </button>
+</header>
+<body>
+    <div class="container">
+        <div class="foto">
+          <img src="IMG_8211.jpg" alt="Foto pessoal">
+        </div>
+        <div class="texto">
+          <h1> Olá, eu sou a Maria Eduarda Oliveira Xavier Santos! </h1>
+          <p> tenho 18 anos e sou uma pessoa muito dedicada e comprometida. </p>
+          <button class="linkedIn" onclick="window.location.href='https://www.linkedin.com/in/maria-eduarda-oliveira-xavier-santos-974303292/'">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              fill="currentColor"
+              class="bi bi-twitter"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"
+              ></path>
+            </svg>
+            <span> LinkedIn </span>
+          </button>
+            <button class="github" onclick="window.location.href='https://github.com/mduardaxs'">
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              height="28"
+              width="28"
+              xmlns="http://www.w3.org/2000/svg"
+  >
+            <path
+              d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"
+            ></path>
+          </svg>
+          <span> GitHub </span>
+        </button>
+        </div>
+      </div>
+</body>
+<div class="footer"> <footer> <p>&copy; 2024 MARIA EDUARDA OLIVEIRA XAVIER SANTOS. Todos os direitos reservados.</p> </footer> 
+</div>
+</html>

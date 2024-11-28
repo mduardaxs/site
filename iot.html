@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<head>
+    <title> INTERNET OF THE THINGS </title>
+</head>
+<!DOCTYPE html>
+<html>
+  <style>
+    header {
+    width: 100%;
+    background-color: #0a3a66;
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    }
+
+    h1{
+    display: inline-block;
+    text-align: left;
+    }
+
+    .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: #0a3a66;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #0a3a66;
+  }
+
+    button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #0a3a66;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+   }
+   
+   button:disabled {
+    pointer-events: none;
+   }
+
+   button:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #ffffff;
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      font-family: Arial, sans-serif;
+      color: #0a3a66;
+      margin: 10;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: #337ab7;
+    }
+    a:hover {
+      color: #23527c;
+    }
+
+    .professores {
+  margin-top: 20px;
+}
+
+.tabela-professores {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabela-professores th, .tabela-professores td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.tabela-professores th {
+  background-color: #f0f0f0;
+}
+
+    footer {
+    background-color: #0a3a66;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    position: end;
+    }
+
+  </style>
+</head>
+<body>
+    <header>
+      <div class="dropdown">
+        <button class="dropbtn"> ÁREAS DO CONHECIMENTO </button>
+        <div class="dropdown-content">
+          <a href= "matemática.html"> MATEMÁTICA </a>
+        <a href= "ch.html"> CIÊNCIAS HUMANAS</a>
+        <a href= "cn.html"> CIÊNCIAS NATURAIS </a>
+        <a href= "lgg.html"> LINGUAGENS </a>
+        </div>
+      </div>
+      <button onclick="window.location.href='paginainicial.html'"> PÁGINA PESSOAL </button>
+      <button onclick="window.location.href='site.html'"> PÁGINA INICIAL </button>
+</header>
+    </header>
+  <div class="container">
+    <h1> IOT </h1>
+    <HR>
+      <div class="professores">
+        <h2> TABELA PROFESSORES E MATÉRIA </h2>
+        <table class="tabela-professores">
+          <tr>
+            <th> PROFESSOR </th>
+            <th> MATÉRIA </th>
+          </tr>
+          <tr>
+            <td> GLAUCO ROBERTO PEREIRA SILVA </td>
+            <td> IOT (INTERNET OF THE THINGS) </td>
+          </tr>
+          <tr>
+    </table>
+    </div>
+    <HR>
+    <h2> TAREFAS FAVORITAS: </h2>
+    <a href=https://youtube.com/shorts/wIuD3INmieU?feature=share> <h3> ATIVIDADE BONÉ </h3> </a>
+    <p> nessa atividade aprendemos a utilizar o arduino junto com o sensor de movimento e o sensor de luz. Assim consistindo na atividade
+      sendo a realização de um boné com sensor de movimento e sensor de luz. </p>
+    <img src="Captura de tela 2024-11-26 223257.png" alt="BONÉ" width="300" height="300">
+    <script>
+      const imagem = document.querySelector('img');
+      imagem.width = 300;
+      imagem.height = 300;
+    </script>
+    <a href=https://youtube.com/shorts/yrtMiOb9ujM?feature=share> <h3> ATIVIDADE CARRINHO</h3> </a>
+    <p> com base no nosso aprendizado anterior sobre arduíno, nessa atividade construimos um carrinho que andava em uma fita.</p>
+    <img src="Captura de tela 2024-11-26 225219.png" alt="CARRINHO" width="300" height="300">
+    <a href="https://youtu.be/8pJ26HIFKnM"> <h3> ATIVIDADE ARDUINO - 4º BIMESTRE </h3></a>
+    <p> bom, nessa atividade basicamente se consistia em nós, alunos, escolhermos o projeto que queriamos trabalhar e faze-lo funcionar
+      com base no arduino. Eu e meu grupo optamos pela construção e automação de uma garagem, porém, no meio do caminho os planos mudaram
+    e ficamos responsáveis pela automação de 2 portas de uma casa (grande) </p>
+    <img class="portas" src="Captura de tela 2024-11-25 211337.png" alt="PORTAS" width="300" height="300">
+    <script>
+      const imagem = document.querySelector('portas');
+      imagem.width = 100;
+      imagem.height = 100;
+    </script>
+  </div>
+</body>
+<div class="footer"> 
+    <footer> <p>&copy; 2024 MARIA EDUARDA OLIVEIRA XAVIER SANTOS. Todos os direitos reservados.</p> </footer>
+</div>
+    </html>
